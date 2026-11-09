@@ -37,3 +37,17 @@ st.write("Please note that the predicted price is an estimate and may vary.")
 if st.button("Predict Price", type="primary"):
     price = predict_price(carat, cut, color, clarity, depth, table, x, y, z)
     st.success(f"The estimated price of the diamond is: ${price:,.2f}")
+
+# Footer
+st.markdown("---")
+st.markdown(
+    """
+    <div style='text-align: center;'>
+        <p style='color: gray;'>Made by bruzz-bruzz</p>
+        <a href='https://github.com/bruzz-bruzz' target='_blank'>GitHub Profile</a> | 
+        <a href='https://github.com/bruzz-bruzz/diamondPricePredictor' target='_blank'>GitHub Repository</a>
+    </div>
+    """,
+    unsafe_allow_html=True
+)
+
