@@ -1,0 +1,17 @@
+name: Wake Up Streamlit App
+on:
+  schedule:
+    - cron: '0 */4 * * *'
+  workflow_dispatch:
+jobs:
+  wake-up:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.10'
+      - name: Install dependencies
+        run: pip install selenium>=4.6
+      - name: Run Wake-Up Script
+        run: python wake_app.py
