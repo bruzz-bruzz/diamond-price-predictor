@@ -3,7 +3,7 @@
 This project is a machine learning-powered web application that predicts the price of a diamond based on its physical characteristics.
 
 ## Features
-- Interactive UI using [Streamlit](https://streamlit.io/).
+- Interactive UI using [Streamlit](https://jn4gpj55f5rckfavcmabbq.streamlit.app/).
 - Trained using a `RandomForestRegressor` from `scikit-learn`.
 - Predicts price based on:
   - Carat
